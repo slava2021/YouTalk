@@ -1,0 +1,65 @@
+.font(@font, @weight, @font-size, @color){
+    font-family: @font;
+    font-weight: @weight;
+    font-style: normal;
+    font-size: @font-size;
+    color: @color;
+}
+
+.button(@padding-top-bottom, @padding-left-right){
+    border-radius: 4px;
+    background-color: @color-btn-primary;
+    padding: @padding-top-bottom @padding-left-right;
+    font-family: @font;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    color: @color-btn-secondary;
+    border:none;
+    cursor: pointer;
+    transition: color 0.3s linear;
+    white-space: nowrap;
+}
+
+.button-hover(){
+    color: @color-btn-primary;
+    background-color: @color-btn-secondary;
+}
+
+.links(){
+    white-space: nowrap;
+    text-decoration: none;
+    color: @primary-color;
+}
+
+.filter-icons(){
+    display: inline-block;
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.sticky-ico(@bgcolor){
+    position: relative;
+    font-family: @font;
+    font-weight: @semibold;
+    font-style: normal;
+    font-size: 14px;
+    padding: 8px 8px;
+    border-radius: 24px;
+    background-color: @bgcolor;
+    box-shadow: 0px 0px 0px 1px #C1C5CD;
+}
+
+.border-radius(){
+    border-radius: 16px; 
+}
+
+.border(@color){
+    border:1px solid @color;
+}

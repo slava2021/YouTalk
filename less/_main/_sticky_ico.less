@@ -1,0 +1,19 @@
+.main-blocks__stick-container{
+    padding: 8px;
+}
+
+.main-blocks__stick {
+    width: fit-content;
+    .sticky-ico(rgba(255,255,255, 0.7));
+    margin-bottom: 8px;
+
+    &:nth-child(n) > span{
+        padding-left: 24px;
+    }
+
+    &:nth-child(n) > span:before{
+        background-image: url("../images/ico_horse.png");
+        .filter-icons();
+        left: 8px;
+    }
+}

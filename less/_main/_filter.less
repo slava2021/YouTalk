@@ -1,0 +1,38 @@
+.main-filter-form .hidden{
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-filter-items{
+    white-space: nowrap; 
+    .sticky-ico(#F9FDFD);
+    cursor: pointer;
+}
+
+.main-filter-form input[type=checkbox]:checked + .main-filter-items{
+    box-shadow: 0px 0px 0px 2px #16C8BB;
+}
+
+//Для JS наверно лучше добавить для элемента еще один клас например smile и horse
+
+.main-filter-items:nth-child(2) > span,
+.main-filter-items:nth-child(6) > span
+{
+    padding-left: 24px;
+    align-self: center;
+}
+
+.main-filter-items:nth-child(2) > span:before{
+    background-image: url("../images/ico_smiling_face.png");
+    .filter-icons();
+    left: 8px;
+}
+
+//Непонимаю почему надпись в теге SPAN -> Self не по центру
+//При этом надпись на кирилице стоит по центру
+.main-filter-items:nth-child(6) > span:before{
+    background-image: url("../images/ico_horse.png");
+    .filter-icons();
+    left: 8px;
+}

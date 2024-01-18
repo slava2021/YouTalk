@@ -1,0 +1,104 @@
+.main-article-container{
+    & .main-sidebar-right{
+       padding-bottom: 60px;
+       row-gap: 16px;
+
+   }
+}
+
+.main-h4{
+    padding-top:16px;
+}
+
+.main-article-list__nav{
+    padding: 0 0 16px 0;
+}
+
+.main-article__blq{
+    padding: 0;
+    margin: 0 0 16px 0;
+}
+
+.main-article__text{
+    & img{
+        width: 288px;
+        height: auto;
+    }
+}
+
+//Плохая практика
+p:nth-of-type(3),
+p:nth-of-type(4){
+    padding: 16px 0;
+}
+
+p:nth-of-type(2),
+p:nth-of-type(5),
+p:nth-of-type(7)
+{
+    padding-bottom: 16px;
+}
+
+.main-article__block{
+    grid-row-gap: 16px;
+    padding-bottom: 16px;
+    & .main-article__text{
+        row-gap: 16px;
+    }
+    & .main-article__text{ 
+        & .main-article__text-img{
+            width: 288px;
+            height: 235px;
+        }
+    }
+}
+
+.main-article__note{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.wrap{
+    padding-bottom: 16px;
+}
+
+
+// Sidebar right
+.main-sidebar__call,
+.main-sidebar__contact,
+.main-sidbar__gifts,
+.main-sidebar__sessions{
+  width: 288px;
+}
+
+//Загружаем свободные окошки
+.main-sidebar__call{
+    padding: 24px 16px;
+}
+
+//Лилия психолог
+.main-sidebar__contact{
+    & .main-sidebar__contact-content{
+        padding: 0;
+    }
+}
+
+//Block sidebar Дарите заботу
+.main-sidbar__gifts{
+    font-size: 32px;
+    height: 292px;
+    background-position-y: 164px, 202px, 117px, 0;
+}
+
+//8 Видео сессий
+.main-sidebar__sessions{
+    & p{
+        padding-right: 5rem;
+    }
+    height: auto;
+    padding: 24px;
+    background-position: bottom, bottom;
+    background-position-x: 180px, 153px;
+    background-position-y: 243px, 235px;
+}
+

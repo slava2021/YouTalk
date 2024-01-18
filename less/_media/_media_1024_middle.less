@@ -1,0 +1,106 @@
+//Main media
+.main {
+    margin: 0 auto;
+}
+
+.bg-blog{
+    background-image: none;
+}
+
+/* Если ширина = 1024 то для левой и правой колонки
+устанавливаем ширину как в проекте Figma
+*/
+.main-article-container{
+    & .main-article-content{
+        width: 714px;
+    }
+    
+    & .main-article-sidebar{
+        width: 222px;
+    }
+}
+
+.main-sidebar__bottom,
+.__bottom-bg
+{
+    display: none;
+}
+
+.main-article-content { 
+    & .main-blocks__date:after{
+        content: "\2022";
+        padding: 8px;
+    }
+
+    & .main-blocks__self{
+        display: inline-block;
+        color: @color-bg-footer;
+    }
+}
+
+/* Если ширина = 1024 то для левой и правой колонки
+устанавливаем ширину как в проекте Figma
+*/
+.main-article__image-swim,
+.main-article__hello-image
+{
+    width: 714px;
+    height: 331px;
+
+}
+
+.main-article__block{    
+    & .main-article__text{
+        width: 100%;
+        & .main-article__text-img{
+            width: 345px;
+            height: 235px;
+        }
+    }
+} 
+
+// Styles for Right main-sidebar blocks
+.main-sidebar__call,
+.main-sidebar__contact,
+.main-sidbar__gifts,
+.main-sidebar__sessions{
+    width: 222px;
+}
+
+.main-sidebar__button{
+    width: 100%;
+}
+
+//Загружаем свободные окошки
+.main-sidebar__call{
+    padding-left: 20px;
+    padding-right: 20px;
+    & .sidebar-family{
+        width: 181px;
+        height: 145px;
+    }
+    & .main-sidebar__p{
+        padding: 0 0 24px 0;
+    }
+}
+
+//Block sidebar Дарите заботу
+.main-sidbar__gifts{
+    background-size: 142px, 122px, 167px, auto;
+    background-position-x: -50px, 130px, 60px, 0;
+    background-position-y: 188px, 220px, 150px, 0;
+
+}
+
+//8 Видео сессий
+.main-sidebar__sessions{
+    height: 304px;
+    padding: 24px;
+    background-size: 108px, 88px;
+    background-position-x: 157px, 138px;
+    background-position-y: 248px, 234px;
+
+    & p{
+        padding-right: 1rem;
+    }
+}

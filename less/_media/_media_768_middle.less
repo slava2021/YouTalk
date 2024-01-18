@@ -1,0 +1,84 @@
+.main-blocks__top{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 24px;
+}
+
+.main-blocks__article{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    padding-bottom: 9px;
+}
+
+.main-article-container{
+    & .main-sidebar-right{
+       display: flex;
+       flex-wrap: wrap;
+       align-items: stretch;
+       column-gap: 16px;
+       row-gap: 36px;
+       padding-bottom: 59px;
+   }
+}
+
+// Sidebar right
+.main-sidebar__call,
+.main-sidebar__contact,
+.main-sidbar__gifts,
+.main-sidebar__sessions{
+  width: 356px;
+  margin-bottom: 0;
+}
+
+//Загружаем свободные окошки
+.main-sidebar__call{
+    padding-left: 20px;
+    padding-right: 20px;
+    & .sidebar-family{
+        width: 257px;
+        height: auto;
+    }
+    & .main-sidebar__p{
+        padding: 0 16px 20px 16px;
+    }
+}
+
+//Лилия психолог
+.main-sidebar__contact{
+    position: relative;
+    .border-radius();
+    border: 1px solid #DEDEDE;
+    text-align: center;
+    padding: 24px;
+    margin-bottom: 0;
+
+    & .main-sidebar__contact-content{
+        padding: 0 24px 13px 24px;
+    }
+}
+
+
+//Block sidebar Дарите заботу
+.main-sidbar__gifts{
+    height: 242px;
+    background-size: auto, auto, auto, auto;
+    background-position-x: 13px, 224px, 143px, 0;
+    background-position-y: 146px, 187px, 101px, 0;
+}
+//8 Видео сессий
+.main-sidebar__sessions{
+    & p{
+        padding-right: 5rem;
+    }
+    height: auto;
+    padding: 21px 21px 4px 21px;
+    background-position: bottom, bottom;
+    background-position-x: 228px, 203px;
+    background-position-y: 182px, 171px;
+}
+
+.main-btn__more{
+   margin-bottom: 55px;
+}
+

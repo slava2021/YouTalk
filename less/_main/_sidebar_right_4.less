@@ -1,0 +1,65 @@
+// Block sidebar 8 Видео сессий
+.main-sidebar__sessions{
+    height: 304px;
+    border-radius: 24px;
+    border: 1px solid #DEDEDE;
+    padding: 32px;
+    background: right bottom / auto no-repeat url("../images/sidebar_box5.png"),
+                right  bottom / auto no-repeat url("../images/sidebar_box4.png");
+    background-size:auto, auto;
+    background-position-x: 204px, 186px;
+    background-position-y: 232px, 222px;
+
+    & h3{
+        .font(@font, @bold, 18px, @color-bg-footer);
+        line-height: 26px;
+        margin: 0;
+        padding-bottom: 16px;
+    }
+    & h3::first-letter{
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    & p{
+        .font(@font, @regular, 14px, #011632);
+        padding-right: 3rem;
+        line-height: 20px;
+        margin: 0;
+        padding-bottom: 16px;
+    }
+    & .main-sidebar__price{
+        display: block;
+        .font(@font, @bold, 24px, @primary-color);
+        color: #333;
+        line-height: 32px;
+        padding-bottom: 16px;
+    }
+
+    & .main-sidebar__box4,
+    & .main-sidebar__box5
+    {
+        position: absolute;
+        bottom: 0;
+    }
+
+    & .main-sidebar__box4{
+        z-index: 5;
+        right: 0;
+        width: 112px;
+        height: 85px;
+    }
+    & .main-sidebar__box5{
+        z-index: 10;
+        right: 0;
+        width: 88px;
+        height: 72px;
+        
+        & img {
+            border-bottom-right-radius: 24px;
+        }
+    }
+    & .main-sidebar__button{
+        width: 108px;
+    }
+}

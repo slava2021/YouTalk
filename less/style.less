@@ -1,0 +1,26 @@
+@import "_var";
+@import "_fonts";
+@import "_mixin";
+@import "_blocks_size";
+
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    .font(@font, @regular, @font-size-default, @primary-color);
+}
+
+@import "_grid/_grid";
+
+@import "_top/_top";
+@import "_main/_main";
+@import "_footer/_footer";
+
+@import "_media/_media_1024";
+@import "_media/_media_768";
+@import "_media/_media_414";
+@import "_media/_media_320";
